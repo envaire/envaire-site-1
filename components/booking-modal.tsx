@@ -100,46 +100,21 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
           <p className="text-gray-300">{t("booking.subtitle")}</p>
         </DialogHeader>
 
-        <div className="flex flex-col lg:flex-row gap-8 mt-6">
-          {/* Calendar Section - Full width on mobile, left side on desktop */}
-          <div className="space-y-6 lg:w-1/2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
+          {/* Calendar Section */}
+          <div className="space-y-6">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <CalendarDays className="w-5 h-5 text-emerald-500" />
                 <Label className="text-white font-medium">{t("booking.selectDate")}</Label>
               </div>
-              <div className="bg-gray-900/50 p-2 lg:p-4 rounded-lg border border-gray-700">
+              <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700">
                 <Calendar
                   mode="single"
                   selected={selectedDate}
                   onSelect={setSelectedDate}
                   disabled={(date) => date < new Date() || date.getDay() === 0 || date.getDay() === 6}
                   className="text-white w-full"
-                  classNames={{
-                    months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 w-full",
-                    month: "space-y-4 w-full",
-                    caption: "flex justify-center pt-1 relative items-center",
-                    caption_label: "text-sm font-medium",
-                    nav: "space-x-1 flex items-center",
-                    nav_button:
-                      "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 text-white border border-gray-600 hover:bg-gray-700",
-                    nav_button_previous: "absolute left-1",
-                    nav_button_next: "absolute right-1",
-                    table: "w-full border-collapse space-y-1",
-                    head_row: "flex w-full",
-                    head_cell: "text-gray-400 rounded-md w-full font-normal text-[0.8rem] flex-1 text-center",
-                    row: "flex w-full mt-2",
-                    cell: "text-center text-sm p-0 relative flex-1 h-9 hover:bg-gray-700/50 rounded-md",
-                    day: "h-9 w-full p-0 font-normal text-white hover:bg-gray-700 rounded-md flex items-center justify-center",
-                    day_range_end: "day-range-end",
-                    day_selected:
-                      "bg-emerald-500 text-black hover:bg-emerald-600 hover:text-black focus:bg-emerald-500 focus:text-black",
-                    day_today: "bg-gray-700 text-white",
-                    day_outside: "text-gray-500 opacity-50",
-                    day_disabled: "text-gray-600 opacity-30",
-                    day_range_middle: "aria-selected:bg-accent aria-selected:text-accent-foreground",
-                    day_hidden: "invisible",
-                  }}
                 />
               </div>
             </div>
@@ -164,8 +139,8 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
             </div>
           </div>
 
-          {/* Form Section - Full width on mobile, right side on desktop */}
-          <form onSubmit={handleSubmit} className="space-y-6 lg:w-1/2">
+          {/* Form Section */}
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <User className="w-5 h-5 text-emerald-500" />

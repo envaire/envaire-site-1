@@ -1,17 +1,18 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import React from "react"
+import { useState, useEffect } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Calendar } from "@/components/ui/calendar"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { CalendarDays, Clock, User, Mail, Building, MessageSquare, Phone } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+
+// Dynamic import for calendar to avoid SSR issues
+const Calendar = React.lazy(() => import("@/components/ui/calendar").then((module) => ({ default: module.Calendar })))
 
 interface BookingModalProps {
   isOpen: boolean
@@ -48,7 +49,12 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
     phone: "",
     message: "",
   })
+  const [isMounted, setIsMounted] = useState(false)
   const { t } = useLanguage()
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -109,13 +115,37 @@ export function BookingModal({ isOpen, onClose }: BookingModalProps) {
                 <Label className="text-white font-medium">{t("booking.selectDate")}</Label>
               </div>
               <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700">
-                <Calendar
-                  mode="single"
-                  selected={selectedDate}
-                  onSelect={setSelectedDate}
-                  disabled={(date) => date < new Date() || date.getDay() === 0 || date.getDay() === 6}
-                  className="text-white w-full"
-                />
+                {isMounted ? (
+                  <React.Suspense
+                    fallback={
+                      <div className="animate-pulse">
+                        <div className="h-8 bg-gray-700 rounded mb-4"></div>
+                        <div className="grid grid-cols-7 gap-1">
+                          {Array.from({ length: 42 }).map((_, i) => (
+                            <div key={i} className="h-9 bg-gray-700 rounded"></div>
+                          ))}
+                        </div>
+                      </div>
+                    }
+                  >
+                    <Calendar
+                      mode="single"
+                      selected={selectedDate}
+                      onSelect={setSelectedDate}
+                      disabled={(date) => date < new Date() || date.getDay() === 0 || date.getDay() === 6}
+                      className="text-white w-full"
+                    />
+                  </React.Suspense>
+                ) : (
+                  <div className="animate-pulse">
+                    <div className="h-8 bg-gray-700 rounded mb-4"></div>
+                    <div className="grid grid-cols-7 gap-1">
+                      {Array.from({ length: 42 }).map((_, i) => (
+                        <div key={i} className="h-9 bg-gray-700 rounded"></div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 

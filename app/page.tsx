@@ -144,42 +144,42 @@ export default function Home() {
             <div className="inline-block whitespace-nowrap animate-scroll">
               {/* First set of logos */}
               <Image
-                src="/logos/v0.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wOiC9IGZJvndqx3HG89Sfr2lmDRCFbIgoja0h"
                 alt="V0"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/openai.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0weF6iBr17iEyYc0WfFBNSRDrJ1HhKm5kVp2Os"
                 alt="OpenAI"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/github.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wXH5lgfyPVUy8GW1cwjqM30rQlfZ6dNoF7gmD"
                 alt="GitHub"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/n8n.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wfDWZl7JpGbCnBZE5HOWiQglsX37aLuDyRozf"
                 alt="n8n"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/make.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wBRF4pOsKX7SRmzq2rgZJ0hc8Osk5etdCuGoQ"
                 alt="Make"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/claude.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0w86YH9veBHw1WgKmlxQ3t9MJN7pF8zUanOEdR"
                 alt="Claude"
                 width={120}
                 height={40}
@@ -188,42 +188,42 @@ export default function Home() {
 
               {/* Duplicate set for seamless scroll */}
               <Image
-                src="/logos/v0.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wOiC9IGZJvndqx3HG89Sfr2lmDRCFbIgoja0h"
                 alt="V0"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/openai.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0weF6iBr17iEyYc0WfFBNSRDrJ1HhKm5kVp2Os"
                 alt="OpenAI"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/github.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wXH5lgfyPVUy8GW1cwjqM30rQlfZ6dNoF7gmD"
                 alt="GitHub"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/n8n.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wfDWZl7JpGbCnBZE5HOWiQglsX37aLuDyRozf"
                 alt="n8n"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/make.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0wBRF4pOsKX7SRmzq2rgZJ0hc8Osk5etdCuGoQ"
                 alt="Make"
                 width={120}
                 height={40}
                 className="h-10 mx-10 inline-block brightness-0 invert hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src="/logos/claude.png"
+                src="https://p1yf23hd3v.ufs.sh/f/NbmxJR2qtK0w86YH9veBHw1WgKmlxQ3t9MJN7pF8zUanOEdR"
                 alt="Claude"
                 width={120}
                 height={40}

@@ -119,7 +119,7 @@ export function ProcessSection() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Vertical Progress Bar - Left Side */}
-          <div className="lg:w-1/3 flex lg:flex-col flex-row lg:items-start items-center lg:justify-start justify-center">
+          <div className="hidden lg:flex lg:w-1/3 lg:flex-col lg:items-start lg:justify-start">
             <div className="relative flex lg:flex-col flex-row lg:h-[800px] w-full lg:w-auto">
               {/* Extended vertical connecting line */}
               <div className="absolute lg:left-8 lg:top-8 lg:bottom-0 lg:w-1 lg:h-full top-8 left-8 right-8 h-1 w-auto bg-gray-700 rounded-full overflow-hidden">

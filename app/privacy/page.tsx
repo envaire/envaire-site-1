@@ -88,10 +88,10 @@ export default function PrivacyPage() {
                   <p className="text-gray-300 leading-relaxed">
                     {t("privacy.contact.content")}{" "}
                     <a
-                      href="mailto:NeuraAI@protonmail.com"
+                      href="mailto:info@envaire.com"
                       className="text-emerald-400 hover:text-emerald-300 underline"
                     >
-                      NeuraAI@protonmail.com
+                      info@envaire.com
                     </a>
                     .
                   </p>

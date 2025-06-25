@@ -10,6 +10,7 @@ import { BookingModal } from "@/components/booking-modal"
 import { Button } from "@/components/ui/button"
 import { LanguageSelector } from "@/components/language-selector"
 import { useLanguage } from "@/contexts/language-context"
+import Link from "next/link"
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -274,8 +275,16 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 relative z-10 border-t border-gray-800">
-        <div className="text-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">{t("footer.businessId")}: 3377350-1</p>
+          <div className="flex gap-6">
+            <Link href="/terms" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">
+              {t("footer.termsOfService")}
+            </Link>
+            <Link href="/privacy" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">
+              {t("footer.privacyPolicy")}
+            </Link>
+          </div>
         </div>
       </footer>
 

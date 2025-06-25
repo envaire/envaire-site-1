@@ -113,6 +113,70 @@ const translations = {
 
     // Footer
     "footer.businessId": "Business ID",
+    "footer.termsOfService": "Terms of Service",
+    "footer.privacyPolicy": "Privacy Policy",
+
+    // Terms of Service
+    "terms.title": "Terms of Service",
+    "terms.lastUpdated": "Last Updated: June 25, 2025",
+    "terms.backToHome": "Back to Home",
+    "terms.welcome":
+      'Welcome to Envaire.com ("we," "us," or "our"). These Terms of Service ("Terms") apply to your use of our website and booking services.',
+    "terms.section1.title": "1. Use of Website",
+    "terms.section1.content":
+      "Our website provides information about our AI automation services and allows you to book consultation calls by submitting your contact details and service requests.",
+    "terms.section2.title": "2. Booking Calls",
+    "terms.section2.content":
+      "By submitting a booking request, you agree to provide accurate and complete information. We will use this information solely to contact you and discuss your needs.",
+    "terms.section3.title": "3. No Sale of Goods or Services on Site",
+    "terms.section3.content":
+      "Our website does not sell products or services directly. All arrangements for services occur separately during or after consultation.",
+    "terms.section4.title": "4. Project Acceptance",
+    "terms.section4.content":
+      "At Envaire, we carefully assess every project inquiry to ensure we can deliver high-quality, effective AI automation solutions. We only proceed with projects that align with our expertise and resources to guarantee the best outcomes for our clients. This helps us maintain a high standard of service and avoid commitments that may not be feasible.",
+    "terms.section5.title": "5. User Conduct",
+    "terms.section5.content":
+      "You agree not to misuse our website or provide false information. We reserve the right to refuse or cancel bookings at our discretion.",
+    "terms.section6.title": "6. Privacy",
+    "terms.section6.content":
+      "Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your data.",
+    "terms.section7.title": "7. Changes to Terms",
+    "terms.section7.content":
+      "We may update these Terms at any time. Continued use of the website means you accept any changes.",
+    "terms.contact.title": "Contact",
+    "terms.contact.content": "Questions? Contact us at",
+
+    // Privacy Policy
+    "privacy.title": "Privacy Policy",
+    "privacy.lastUpdated": "Last Updated: June 25, 2025",
+    "privacy.backToHome": "Back to Home",
+    "privacy.welcome":
+      "At Envaire, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our website and services.",
+    "privacy.section1.title": "Information We Collect",
+    "privacy.section1.content":
+      "When you use our website or book a consultation, we may collect the following information:",
+    "privacy.section1.item1": "Name and contact information (email, phone number)",
+    "privacy.section1.item2": "Company name and business information",
+    "privacy.section1.item3": "Messages and communications you send to us",
+    "privacy.section1.item4": "Technical information such as IP address and browser type",
+    "privacy.section2.title": "How We Use Your Information",
+    "privacy.section2.content": "We use the information we collect for the following purposes:",
+    "privacy.section2.item1": "To respond to your inquiries and schedule consultations",
+    "privacy.section2.item2": "To provide and improve our AI automation services",
+    "privacy.section2.item3": "To communicate with you about our services and updates",
+    "privacy.section3.title": "Data Sharing",
+    "privacy.section3.content":
+      "We do not sell, trade, or share your personal information with third parties except as necessary to provide our services or as required by law. Your data remains confidential and is only used for the purposes outlined in this policy.",
+    "privacy.section4.title": "Data Retention",
+    "privacy.section4.content":
+      "We retain your personal information only as long as necessary to fulfill the purposes for which it was collected or as required by applicable laws. You may request deletion of your data at any time by contacting us.",
+    "privacy.section5.title": "Security Measures",
+    "privacy.section5.content": "Our freelancer team implements strong security measures:",
+    "privacy.section5.item1": "Data transfer encryption according to industry standards",
+    "privacy.section5.item2": "Secure development practices",
+    "privacy.section5.item3": "Regular security assessments",
+    "privacy.contact.title": "Contact Information",
+    "privacy.contact.content": "If you have any questions related to data protection, please contact:",
   },
   fi: {
     // Header
@@ -215,6 +279,70 @@ const translations = {
 
     // Footer
     "footer.businessId": "Y-tunnus",
+    "footer.termsOfService": "Käyttöehdot",
+    "footer.privacyPolicy": "Tietosuojakäytäntö",
+
+    // Terms of Service
+    "terms.title": "Käyttöehdot",
+    "terms.lastUpdated": "Viimeksi päivitetty: 25. kesäkuuta 2025",
+    "terms.backToHome": "Takaisin etusivulle",
+    "terms.welcome":
+      'Tervetuloa Envaire.com-sivustolle ("me", "meidän" tai "meidät"). Nämä käyttöehdot ("Ehdot") koskevat verkkosivustomme ja varauspalveluidemme käyttöä.',
+    "terms.section1.title": "1. Verkkosivuston käyttö",
+    "terms.section1.content":
+      "Verkkosivustomme tarjoaa tietoa tekoälyautomaatiopalveluistamme ja mahdollistaa konsultaatiopuhelujen varaamisen lähettämällä yhteystietosi ja palvelupyynnöt.",
+    "terms.section2.title": "2. Puhelujen varaaminen",
+    "terms.section2.content":
+      "Lähettämällä varauspyynnön sitoudut antamaan tarkkoja ja täydellisiä tietoja. Käytämme näitä tietoja ainoastaan ottaaksemme sinuun yhteyttä ja keskustellaksemme tarpeistasi.",
+    "terms.section3.title": "3. Ei tuotteiden tai palveluiden myyntiä sivustolla",
+    "terms.section3.content":
+      "Verkkosivustomme ei myy tuotteita tai palveluita suoraan. Kaikki palvelujärjestelyt tapahtuvat erikseen konsultaation aikana tai sen jälkeen.",
+    "terms.section4.title": "4. Projektin hyväksyminen",
+    "terms.section4.content":
+      "Envairessa arvioimme huolellisesti jokaisen projektikyselyn varmistaaksemme, että voimme toimittaa korkealaatuisia, tehokkaita tekoälyautomaatioratkaisuja. Jatkamme vain projektien kanssa, jotka sopivat asiantuntemukseemme ja resursseihin taataksemme parhaat tulokset asiakkaillemme. Tämä auttaa meitä ylläpitämään korkeaa palvelutasoa ja välttämään sitoumuksia, jotka eivät ehkä ole toteutettavissa.",
+    "terms.section5.title": "5. Käyttäjän käyttäytyminen",
+    "terms.section5.content":
+      "Sitoudut olemaan väärinkäyttämättä verkkosivustoamme tai antamatta vääriä tietoja. Pidätämme oikeuden kieltäytyä tai peruuttaa varauksia harkintamme mukaan.",
+    "terms.section6.title": "6. Yksityisyys",
+    "terms.section6.content":
+      "Yksityisyytesi on meille tärkeää. Tutustu tietosuojakäytäntöömme ymmärtääksesi, miten keräämme ja käytämme tietojasi.",
+    "terms.section7.title": "7. Ehtojen muutokset",
+    "terms.section7.content":
+      "Voimme päivittää näitä ehtoja milloin tahansa. Verkkosivuston jatkuva käyttö tarkoittaa, että hyväksyt mahdolliset muutokset.",
+    "terms.contact.title": "Yhteystiedot",
+    "terms.contact.content": "Kysymyksiä? Ota yhteyttä osoitteeseen",
+
+    // Privacy Policy
+    "privacy.title": "Tietosuojakäytäntö",
+    "privacy.lastUpdated": "Viimeksi päivitetty: 25. kesäkuuta 2025",
+    "privacy.backToHome": "Takaisin etusivulle",
+    "privacy.welcome":
+      "Envairessa olemme sitoutuneet suojelemaan yksityisyyttäsi ja varmistamaan henkilötietojesi turvallisuuden. Tämä tietosuojakäytäntö selittää, miten keräämme, käytämme ja suojaamme tietojasi, kun käytät verkkosivustoamme ja palveluitamme.",
+    "privacy.section1.title": "Keräämämme tiedot",
+    "privacy.section1.content":
+      "Kun käytät verkkosivustoamme tai varaat konsultaation, voimme kerätä seuraavia tietoja:",
+    "privacy.section1.item1": "Nimi ja yhteystiedot (sähköposti, puhelinnumero)",
+    "privacy.section1.item2": "Yrityksen nimi ja liiketoimintatiedot",
+    "privacy.section1.item3": "Viestit ja viestintä, jonka lähetät meille",
+    "privacy.section1.item4": "Tekniset tiedot, kuten IP-osoite ja selaintyyppi",
+    "privacy.section2.title": "Miten käytämme tietojasi",
+    "privacy.section2.content": "Käytämme keräämiämme tietoja seuraaviin tarkoituksiin:",
+    "privacy.section2.item1": "Vastataksemme kyselyihisi ja aikatauluttaaksemme konsultaatioita",
+    "privacy.section2.item2": "Tarjotaksemme ja parantaaksemme tekoälyautomaatiopalveluitamme",
+    "privacy.section2.item3": "Kommunikoidaksemme kanssasi palveluistamme ja päivityksistä",
+    "privacy.section3.title": "Tietojen jakaminen",
+    "privacy.section3.content":
+      "Emme myy, vaihda tai jaa henkilötietojasi kolmansille osapuolille, paitsi tarvittaessa palveluidemme tarjoamiseksi tai lain vaatimana. Tietosi pysyvät luottamuksellisina ja niitä käytetään vain tässä käytännössä määriteltyihin tarkoituksiin.",
+    "privacy.section4.title": "Tietojen säilyttäminen",
+    "privacy.section4.content":
+      "Säilytämme henkilötietojasi vain niin kauan kuin on tarpeen niiden keräämisen tarkoitusten täyttämiseksi tai sovellettavien lakien vaatimana. Voit pyytää tietojesi poistamista milloin tahansa ottamalla meihin yhteyttä.",
+    "privacy.section5.title": "Turvatoimet",
+    "privacy.section5.content": "Freelancer-tiimimme toteuttaa vahvoja turvatoimia:",
+    "privacy.section5.item1": "Tiedonsiirron salaus alan standardien mukaisesti",
+    "privacy.section5.item2": "Turvalliset kehityskäytännöt",
+    "privacy.section5.item3": "Säännölliset turvallisuusarvioinnit",
+    "privacy.contact.title": "Yhteystiedot",
+    "privacy.contact.content": "Jos sinulla on kysymyksiä tietosuojaan liittyen, ota yhteyttä:",
   },
 }
 

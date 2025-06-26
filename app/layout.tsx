@@ -14,30 +14,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon/favicon.svg',
-        type: 'image/svg+xml',
-      },
-      {
-        url: '/favicon/favicon.ico',
+        url: '/favicon.ico',
+        sizes: 'any',
         type: 'image/x-icon',
       }
-    ],
-    apple: [
-      {
-        url: '/favicon/apple-touch-icon.png',
-        sizes: '180x180',
-        type: 'image/png',
-      }
-    ],
-    other: [
-      {
-        rel: 'mask-icon',
-        url: '/favicon/safari-pinned-tab.svg',
-        color: '#10B981'
-      }
     ]
-  },
-  manifest: '/favicon/site.webmanifest'
+  }
 }
 
 export default function RootLayout({

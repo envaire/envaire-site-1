@@ -24,14 +24,14 @@ export function MobileMenu() {
 
   return (
     <div className="md:hidden">
-      <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)} className="text-white">
+      <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)} className="relative z-50 text-white">
         <Menu className="h-6 w-6" />
         <span className="sr-only">Open menu</span>
       </Button>
 
       {/* Backdrop */}
       <div 
-        className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/80 backdrop-blur-sm z-40 transition-opacity duration-300 ${
           isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsOpen(false)}
@@ -39,11 +39,11 @@ export function MobileMenu() {
 
       {/* Side drawer */}
       <div 
-        className={`fixed top-0 right-0 h-full w-[280px] bg-black border-l border-gray-800 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-[280px] bg-black/95 backdrop-blur-md shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex items-center justify-between p-4 border-b border-gray-800">
+        <div className="flex items-center justify-between p-4 border-b border-gray-800/50">
           <div className="text-lg font-bold text-white">.ENVAIRE</div>
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="text-white">
             <X className="h-6 w-6" />
@@ -51,7 +51,7 @@ export function MobileMenu() {
           </Button>
         </div>
 
-        <nav className="flex flex-col p-6">
+        <nav className="flex flex-col p-6 bg-black/95">
           <div className="mb-6">
             <LanguageSelector />
           </div>

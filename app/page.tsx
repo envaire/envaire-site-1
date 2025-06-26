@@ -47,7 +47,7 @@ export default function Home() {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(#333_1px,transparent_1px)] bg-[size:20px_20px] opacity-30 pointer-events-none" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0,transparent_70%)] pointer-events-none" />
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute hidden md:block -top-40 -left-40 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute top-1/3 -right-20 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-900/20 rounded-full blur-3xl" />
         <div className="absolute top-1/4 right-1/3 w-72 h-72 bg-emerald-800/25 rounded-full blur-2xl" />

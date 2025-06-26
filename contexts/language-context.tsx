@@ -171,7 +171,7 @@ const translations = {
     "privacy.section4.content":
       "We retain your personal information only as long as necessary to fulfill the purposes for which it was collected or as required by applicable laws. You may request deletion of your data at any time by contacting us.",
     "privacy.section5.title": "Security Measures",
-    "privacy.section5.content": "Our freelancer team implements strong security measures:",
+    "privacy.section5.content": "Our team implements strong security measures:",
     "privacy.section5.item1": "Data transfer encryption according to industry standards",
     "privacy.section5.item2": "Secure development practices",
     "privacy.section5.item3": "Regular security assessments",
@@ -337,7 +337,7 @@ const translations = {
     "privacy.section4.content":
       "Säilytämme henkilötietojasi vain niin kauan kuin on tarpeen niiden keräämisen tarkoitusten täyttämiseksi tai sovellettavien lakien vaatimana. Voit pyytää tietojesi poistamista milloin tahansa ottamalla meihin yhteyttä.",
     "privacy.section5.title": "Turvatoimet",
-    "privacy.section5.content": "Freelancer-tiimimme toteuttaa vahvoja turvatoimia:",
+    "privacy.section5.content": "Tiimimme toteuttaa vahvoja turvatoimia:",
     "privacy.section5.item1": "Tiedonsiirron salaus alan standardien mukaisesti",
     "privacy.section5.item2": "Turvalliset kehityskäytännöt",
     "privacy.section5.item3": "Säännölliset turvallisuusarvioinnit",

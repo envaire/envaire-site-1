@@ -10,7 +10,12 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Envaire | AI Innovation",
   description: "Empowering businesses with elegant AI solutions",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+    ],
+  }
 }
 
 export default function RootLayout({

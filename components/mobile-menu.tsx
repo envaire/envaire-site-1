@@ -18,55 +18,58 @@ export function MobileMenu() {
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black">
-          <div className="flex justify-end p-4">
+        <div className="fixed inset-0 z-50 bg-black/95">
+          <div className="flex items-center justify-between p-4 border-b border-gray-800">
+            <div className="text-lg font-semibold text-white">Menu</div>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="text-white">
               <X className="h-6 w-6" />
               <span className="sr-only">Close menu</span>
             </Button>
           </div>
 
-          <nav className="flex flex-col items-center gap-8 p-8">
+          <nav className="flex flex-col p-4">
             <LanguageSelector />
-            <button
-              onClick={(e) => {
-                e.preventDefault()
-                setIsOpen(false)
-                setTimeout(() => {
-                  const servicesElement = document.getElementById("services")
-                  if (servicesElement) {
-                    servicesElement.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                }, 300)
-              }}
-              className="text-xl hover:text-emerald-400 transition-colors"
-            >
-              {t("nav.services")}
-            </button>
-            <button
-              onClick={(e) => {
-                e.preventDefault()
-                setIsOpen(false)
-                setTimeout(() => {
-                  const processElement = document.getElementById("process")
-                  if (processElement) {
-                    processElement.scrollIntoView({ behavior: "smooth", block: "start" })
-                  }
-                }, 300)
-              }}
-              className="text-xl hover:text-emerald-400 transition-colors"
-            >
-              {t("nav.process")}
-            </button>
-            <Button
-              className="bg-gradient-to-r from-emerald-700 to-emerald-500 hover:from-emerald-600 hover:to-emerald-400 text-white rounded-md flex items-center gap-2 mt-4"
-              onClick={() => {
-                setIsOpen(false)
-                // You'll need to pass a callback prop to handle opening the booking modal
-              }}
-            >
-              {t("hero.bookMeeting")}
-            </Button>
+            <div className="space-y-4 mt-6">
+              <button
+                onClick={(e) => {
+                  e.preventDefault()
+                  setIsOpen(false)
+                  setTimeout(() => {
+                    const servicesElement = document.getElementById("services")
+                    if (servicesElement) {
+                      servicesElement.scrollIntoView({ behavior: "smooth", block: "start" })
+                    }
+                  }, 300)
+                }}
+                className="w-full text-left px-4 py-2 text-lg text-white hover:text-emerald-400 transition-colors"
+              >
+                {t("nav.services")}
+              </button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault()
+                  setIsOpen(false)
+                  setTimeout(() => {
+                    const processElement = document.getElementById("process")
+                    if (processElement) {
+                      processElement.scrollIntoView({ behavior: "smooth", block: "start" })
+                    }
+                  }, 300)
+                }}
+                className="w-full text-left px-4 py-2 text-lg text-white hover:text-emerald-400 transition-colors"
+              >
+                {t("nav.process")}
+              </button>
+              <Button
+                className="w-full bg-gradient-to-r from-emerald-700 to-emerald-500 hover:from-emerald-600 hover:to-emerald-400 text-white rounded-md py-2 mt-4"
+                onClick={() => {
+                  setIsOpen(false)
+                  // You'll need to pass a callback prop to handle opening the booking modal
+                }}
+              >
+                {t("hero.bookMeeting")}
+              </Button>
+            </div>
           </nav>
         </div>
       )}

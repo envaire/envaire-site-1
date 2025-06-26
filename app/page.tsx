@@ -33,7 +33,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* Enhanced mouse glow effect */}
       <div
-        className="fixed pointer-events-none z-30 w-96 h-96 rounded-full opacity-40 transition-opacity duration-300"
+        className="fixed hidden md:block pointer-events-none z-30 w-96 h-96 rounded-full opacity-40 transition-opacity duration-300"
         style={{
           left: mousePosition.x - 192,
           top: mousePosition.y - 192,
@@ -46,17 +46,17 @@ export default function Home() {
       {/* Background pattern with enhanced green glow */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(#333_1px,transparent_1px)] bg-[size:20px_20px] opacity-30 pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0,transparent_70%)] pointer-events-none" />
+        <div className="absolute hidden md:block inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.25)_0,transparent_70%)] pointer-events-none" />
         <div className="absolute hidden md:block -top-40 -left-40 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-1/3 -right-20 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-green-900/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/4 right-1/3 w-72 h-72 bg-emerald-800/25 rounded-full blur-2xl" />
+        <div className="absolute hidden md:block top-1/3 -right-20 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute hidden md:block bottom-1/4 left-1/4 w-80 h-80 bg-green-900/20 rounded-full blur-3xl" />
+        <div className="absolute hidden md:block top-1/4 right-1/3 w-72 h-72 bg-emerald-800/25 rounded-full blur-2xl" />
       </div>
 
       {/* Header - Oval/Pill Shape with Animated Border */}
       <div className="container mx-auto px-4 py-6 relative z-10">
         <div className="max-w-5xl mx-auto relative">
-          <div className="animated-border-header bg-black/60 backdrop-blur-md rounded-full px-6 py-3 flex items-center justify-between">
+          <div className="md:animated-border-header bg-black/60 backdrop-blur-md md:rounded-full px-6 py-3 flex items-center justify-between">
             <div className="flex items-center">
               <h1 className="text-xl font-bold">
                 <span className="text-emerald-500">.</span>ENVAIRE
